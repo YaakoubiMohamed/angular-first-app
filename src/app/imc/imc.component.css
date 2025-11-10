@@ -1,0 +1,64 @@
+.imc-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.imc-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.calculate-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.calculate-btn:hover {
+  background-color: #0056b3;
+}
+
+.results {
+  text-align: center;
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.imc-result {
+  color: #28a745;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.interpretation {
+  color: #333;
+  font-style: italic;
+}

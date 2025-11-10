@@ -1,0 +1,33 @@
+<div class="imc-container">
+  <h2>Calculateur d'IMC</h2>
+  
+  <div class="form-group">
+    <input 
+      type="number" 
+      placeholder="Tapez votre poids (kg)" 
+      [(ngModel)]="poids"
+      class="input-field">
+  </div>
+  
+  <div class="form-group">
+    <input 
+      type="number" 
+      placeholder="Tapez votre taille (en mètre)" 
+      [(ngModel)]="taille"
+      class="input-field">
+  </div>
+  
+  <button (click)="calculerIMC()" class="calculate-btn">Calculer IMC</button>
+  
+  <div class="results">
+    @if (errormessage) {
+      <p class="error-message">{{errormessage}}</p>
+    }
+    @if (imc && !errormessage) {
+      <p class="imc-result">Votre IMC est : {{imc}}</p>
+    }
+    @if (interpretation && !errormessage) {
+      <p class="interpretation">{{interpretation}}</p>
+    }
+  </div>
+</div>

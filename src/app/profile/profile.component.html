@@ -1,0 +1,46 @@
+<div class="profile-container">
+  <h2>Profil Utilisateur</h2>
+  
+  <div class="form-section">
+    <h3>Saisie des informations</h3>
+    
+    <div class="form-group">
+      <label for="nom">Nom:</label>
+      <input 
+        id="nom"
+        type="text" 
+        placeholder="Entrez votre nom" 
+        [(ngModel)]="nom"
+        (input)="updateProfile()"
+        class="input-field">
+    </div>
+    
+    <div class="form-group">
+      <label for="prenom">Prénom:</label>
+      <input 
+        id="prenom"
+        type="text" 
+        placeholder="Entrez votre prénom" 
+        [(ngModel)]="prenom"
+        (input)="updateProfile()"
+        class="input-field">
+    </div>
+    
+    <div class="button-group">
+      <button (click)="updateProfile()" class="update-btn">Mettre à jour</button>
+      <button (click)="clearProfile()" class="clear-btn">Effacer</button>
+    </div>
+  </div>
+
+  <div class="interpolation-section">
+    <h3>Interpolation de propriétés</h3>
+    
+    <div class="demo-box">
+      <h4>Exemples d'interpolation:</h4>
+      <p><strong>Nom:</strong> {{nom || 'Non renseigné'}}</p>
+      <p><strong>Prénom:</strong> {{prenom || 'Non renseigné'}}</p>
+      <p><strong>Nom complet:</strong> {{fullName || 'Aucun nom saisi'}}</p>
+      <p><strong>Salutation:</strong> {{greeting || 'Veuillez saisir vos informations'}}</p>
+    </div>
+  </div>
+</div>
